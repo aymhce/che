@@ -42,7 +42,7 @@ export class CheWebsocket {
         wsProtocol = 'wss';
       }
 
-      wsUrl = wsProtocol + '://' + $location.host() + ':' + $location.port() + '/api/ws';
+      wsUrl = wsProtocol + '://' + $location.host() + '/' + $location.port() + '/ws';
     }
     this.wsBaseUrl = wsUrl;
     this.bus = null;
